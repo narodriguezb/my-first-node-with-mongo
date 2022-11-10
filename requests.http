@@ -1,0 +1,27 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"gordo 2",
+    "age": 24,
+    "email":"gordo@hotmail.com"
+}
+
+###
+get http://localhost:9000/api/users HTTP/1.1
+
+###
+get http://localhost:9000/api/users/636d19dd656357afd88917b8 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/636d19dd656357afd88917b8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"kevin Vargas",
+    "age": 28,
+    "email":"gordo@hotmail.com"
+}
+###
+DELETE http://localhost:9000/api/users/636d19dd656357afd88917b8 HTTP/1.1
